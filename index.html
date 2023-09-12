@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/slick-theme.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <title>LaSpezia</title>
+    </head>
+    <body>
+        <!----------------Preloader------------------------->
+        <div class="preloader">
+            <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+              </path>
+            </svg>
+          </div>
+
+        <header class="section" id="js-home">
+            <div class="header__slider" id="js-slider">
+                <div class="header__slider-item">
+                    <img class="slider__bg" src="img/slidermain.jpg" alt="">
+                    <div class="col-12 slider__img-logo">
+                         <img class="main-logo__img animate__animated animate__fadeIn" src="img/whitelogo.png" alt="">
+                         <div class="slogan text-center animate__animated animate__fadeInUp">Speak with the taste</div>
+                    </div>
+                </div>
+
+                <div class="header__slider-item">
+                    <img class="slider__bg" src="img/slider1.jpg" alt="">
+                    <div class="col-12 slider__img-logo">
+                         <img class="main-logo__img" src="img/whitelogo.png" alt="">
+                         <div class="slogan text-center animate__animated animate__fadeInUp">Species Dishes</div>
+                    </div>
+                </div>
+
+                <div class="header__slider-item">
+                    <img class="slider__bg" src="img/slider4.jpg" alt="">
+                    <div class="col-12 slider__img-logo">
+                         <img class="main-logo__img" src="img/whitelogo.png" alt="">
+                         <div class="slogan text-center animate__animated animate__fadeInUp ">Strong &Tasty Pizza</div>
+                    </div>
+                </div>
+
+                <div class="header__slider-item">
+                    <img class="slider__bg" src="img/slider3.jpg" alt="">
+                    <div class="col-12 slider__img-logo">
+                         <img class="main-logo__img" src="img/whitelogo.png" alt="">
+                         <div class="slogan text-center animate__animated animate__fadeInUp">Traditional Food</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="header__menu col-12 col-sm-12">
+                        <div class="header__menu-inner" data-wow-duration="1.5s">
+                            <div class="menu__logo--white"><a href="/"><img src="img/minlogo.png" alt=""></a></div>
+                            <div class="menu__logo--black"><img src="img/minlogoblack.png" alt=""></div>
+                            <nav class="header__menu-nav">
+                                <ul class="header__menu-items">
+                                    <li class="header__menu-item"><a class="header__menu-item__link menu-active" href="#js-home">home</a></li>
+                                    <li class="header__menu-item"><a class="header__menu-item__link" href="#js-about">about us</a></li>
+                                    <li class="header__menu-item"><a class="header__menu-item__link" href="#js-menu">the menu</a></li>
+                                    <li class="header__menu-item"><a class="header__menu-item__link" href="#js-reserv">reservation</a></li>
+                                    <li class="header__menu-item"><a class="header__menu-item__link" href="#js-event">events</a></li>
+                                    <li class="header__menu-item"><a class="header__menu-item__link" href="#js-contact">contact</a></li>
+                                </ul>
+                            </nav>
+
+                            <nav class="menu-mobile__list">
+
+                                <ul class="menu__mobile">
+                                    <li class="menu__mobile-item"><a class="menu__mobile-categories" href="#js-home">home</a></li>
+                                    <li class="menu__mobile-item"><a class="menu__mobile-categories" href="#js-about">about us</a></li>
+                                    <li class="menu__mobile-item"><a class="menu__mobile-categories" href="#js-menu">the menu</a></li>
+                                    <li class="menu__mobile-item"><a class="menu__mobile-categories" href="#js-reserv">the menu</a></li>
+                                    <li class="menu__mobile-item"><a class="menu__mobile-categories" href="#js-event">events</a></li>
+                                    <li class="menu__mobile-item"><a class="menu__mobile-categories" href="#js-contact">contact</a></li>
+                                </ul>
+                            </nav>
+
+                            <button class="menu__mobile-btn" id="js-menu-btn">
+                                <div class="menu__btn-line1"></div>
+                                <div class="menu__btn-line2"></div>
+                                <div class="menu__btn-line3"></div>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-----------------------------Mobile Header section------------------------------------------->
+    <div class="menu__mobile-overlay"></div>
+
+
+
+        </header>
+
+        <!---------------------------------------About---------------------------------------------->
+        <section class="section about" id="js-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>About us</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card--noimage">
+                            <div class="section__card-titlelight">Speciality of the House</div>
+                            <div class="section__card-advtext">Discover our tasty meals</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                            <button class="section__card-button btn btn-sm">discover menu</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card">
+                            <img src="img/sectcardimg1.png" alt="">
+                            <div class="section__card-title">Our Restaurant Story</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                            <div class="section__card-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card">
+                            <img src="img/sectcardimg2.png" alt="">
+                            <div class="section__card-title">About Our Master Chefs</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                            <div class="section__card-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------SectionBanner------------------------------------------------>
+        <section class="section banner" id="js-banner1">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-middle">
+                        <div class="banner__middle__item">
+                            <img src="img/foodbannerimg2.png" alt="">
+                        </div>
+                        <div class="banner-middle__item">
+                            <img src="img/foodbannerimg2.png" alt="">
+                            <div class="banner-middle__item-inner">
+                            <div class="banner__title">art of  food</div>
+                            <div class="banner__text mobile-no-img">Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry.</div>
+                            <button class="banner__button btn">book now!</button>
+                            </div>
+                        </div>
+                        <div class="banner-middle__item">
+                            <img src="img/foodbannerimg3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------Special-------------------------------------------------------->
+        <section class="section special"vid="js-special">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>Special Dishes</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card special__card">
+                            <div class="price">
+                            <img src="img/grillmeat.png" alt="">
+                            <div class="special__card-price">32 &#x24;</div>
+                            </div>
+                            <div class="section__card-title">Grilled Meat</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card special__card">
+                            <div class="price">
+                            <img src="img/salmonsteak.png" alt="">
+                            <div class="special__card-price">42 &#x24;</div>
+                            </div>
+                            <div class="section__card-title">Salmon Steak</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card special__card">
+                            <div class="price">
+                            <img src="img/buabes.png" alt="">
+                            <div class="special__card-price">50 &#x24;</div>
+                            </div>
+                            <div class="section__card-title">buabes</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separate-line"></div>
+        <!---------------------------------------Menu----------------------------------------------->
+        <section class="section menu" id="js-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>the menu</span></h2>
+                        <h4 class="menu__text">Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="tab">
+                            <li class="tablinks" onclick="openTab(event, 'tab-1')" id="defaultOpen">All</li>
+                            <li class="tablinks" onclick="openTab(event, 'tab-2')">starters & sides</li>
+                            <li class="tablinks" onclick="openTab(event, 'tab-3')">main dishes</li>
+                            <li class="tablinks" onclick="openTab(event, 'tab-4')">deserts</li>
+                            <li class="tablinks" onclick="openTab(event, 'tab-5')">drinks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-1" class="tabcontent">
+                <ul class="menu__images row nopadding">
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage1.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>french onion soup</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage2.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>pasta carbonara</h3>
+                                <p>one dish - 20$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage3.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>ceasar salad</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage4.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>Steak Fajitas</h3>
+                                <p>one dish - 45$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage5.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>wedge salad</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage6.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>caponata</h3>
+                                <p>one dish - 30$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage7.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>tiramisu</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-3 menu__images-item">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage8.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>chocolate gelato</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+              </div>
+
+              <div id="tab-2" class="tabcontent">
+                <ul class="menu__images row nopadding">
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage1.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>french onion soup</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage2.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>pasta carbonara</h3>
+                                <p>one dish - 20$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage3.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>ceasar salad</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage4.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>Steak Fajitas</h3>
+                                <p>one dish - 45$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage5.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>wedge salad</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage6.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>caponata</h3>
+                                <p>one dish - 30$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage7.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>tiramisu</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-3 menu__images-item">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage8.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>chocolate gelato</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+              </div>
+
+              <div id="tab-3" class="tabcontent">
+                <ul class="menu__images row nopadding">
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage1.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>french onion soup</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage2.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>pasta carbonara</h3>
+                                <p>one dish - 20$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage3.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>ceasar salad</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage4.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>Steak Fajitas</h3>
+                                <p>one dish - 45$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage5.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>wedge salad</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage6.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>caponata</h3>
+                                <p>one dish - 30$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage7.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>tiramisu</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-3 menu__images-item">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage8.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>chocolate gelato</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+              </div>
+
+              <div id="tab-4" class="tabcontent">
+                <ul class="menu__images row nopadding">
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage1.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>french onion soup</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage2.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>pasta carbonara</h3>
+                                <p>one dish - 20$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage3.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>ceasar salad</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage4.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>Steak Fajitas</h3>
+                                <p>one dish - 45$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage5.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>wedge salad</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage6.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>caponata</h3>
+                                <p>one dish - 30$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage7.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>tiramisu</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-3 menu__images-item">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage8.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>chocolate gelato</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+              </div>
+
+              <div id="tab-5" class="tabcontent">
+                <ul class="menu__images row nopadding">
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage1.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>french onion soup</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage2.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>pasta carbonara</h3>
+                                <p>one dish - 20$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage3.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>ceasar salad</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage4.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>Steak Fajitas</h3>
+                                <p>one dish - 45$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage5.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>wedge salad</h3>
+                                <p>one dish - 25$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage6.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>caponata</h3>
+                                <p>one dish - 30$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="menu__images-item col-3">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage7.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>tiramisu</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-3 menu__images-item">
+                        <figure>
+                             <div class="image__item">
+                                <a href=""><img class="image__item-picture" src="img/menuimage8.png" alt=""></a>
+                             </div>
+                             <figcaption class="image__item-name">
+                                <h3>chocolate gelato</h3>
+                                <p>one dish - 15$</p>
+                             </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+              </div>
+        </section>
+        <!---------------------------Reservation--------------------------------------------------------------->
+        <section class="section reservation" id="js-reserv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>reservation</span></h2>
+                        <h4 class="menu__text">Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy</h4>
+                    </div>
+
+                    <form class="row reservation__form">
+                        <div class="col-xxl-6 form__input">
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="your name">
+                            <i class="input__icon"><img src="img/nameicon.png" alt=""></i>
+                        </div>
+
+                        <div class="col-xxl-6 form__input">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="reservation date">
+                            <i class="input__icon"><img src="img/calendaricon.png" alt=""></i>
+                        </div>
+
+                        <div class="col-xxl-6 form__input">
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>select time</option>
+                            <option value="1">12:00</option>
+                            <option value="2">14:00</option>
+                            <option value="3">16:00</option>
+                          </select>
+                        </div>
+                        <div class="col-xxl-6 form__input">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>select persons</option>
+                              <option value="1">People 1</option>
+                              <option value="2">People 2</option>
+                              <option value="3">People 3</option>
+                            </select>
+                          </div>
+
+
+                          <button type="submit" class="col-xxl-12 reservation__btn btn">Send message</button>
+
+                      </form>
+                      <img class="reservation-bottom__img" src="img/pizzaimage.png" alt="">
+
+                </div>
+            </div>
+
+
+        </section>
+        <div class="separate-line"></div>
+        <!-------------------------------------Service------------------------------------------------>
+        <section class="section service" id="js-service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>our service</span></h2>
+                        <h4 class="menu__text">Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-3">
+                        <div class="service__card">
+                            <img src="img/serviceicon1.png" alt="">
+                            <div class="srvice__title">Spa & Massage</div>
+                            <div class="service__text">Lorem Ipsum is simply dummy text of the printing & typesetting.</div>
+                            <div class="section__card-line--center"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3">
+                        <div class="service__card">
+                            <img src="img/serviceicon2.png" alt="">
+                            <div class="srvice__title">lunch</div>
+                            <div class="service__text">Lorem Ipsum is simply dummy text of the printing & typesetting.</div>
+                            <div class="section__card-line--center"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3">
+                        <div class="service__card">
+                            <img src="img/serviceicon3.png" alt="">
+                            <div class="srvice__title">Dinner</div>
+                            <div class="service__text">Lorem Ipsum is simply dummy text of the printing & typesetting.</div>
+                            <div class="section__card-line--center"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3">
+                        <div class="service__card">
+                            <img src="img/serviceicon4.png" alt="">
+                            <div class="srvice__title">Custom</div>
+                            <div class="service__text">Lorem Ipsum is simply dummy text of the printing & typesetting.</div>
+                            <div class="section__card-line--center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------PopularDish-------------------------------------------------------->
+        <section class="section popular" id="js-popular">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>popular dish</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-md-6 col-lg-6 col-sm-12">
+                        <div class="section__card special__card">
+                            <div class="price">
+                            <img src="img/popdish1.png" alt="">
+                            <div class="special__card-price">28 &#x24;</div>
+                            </div>
+                            <div class="section__card-title">lasagna</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                            <div class="section__card-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-lg-6 col-sm-12">
+                        <div class="section__card special__card">
+                            <div class="price">
+                            <img src="img/popdish2.png" alt="">
+                            <div class="special__card-price">12 &#x24;</div>
+                            </div>
+                            <div class="section__card-title">Ricotta</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                            <div class="section__card-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-lg-6 col-sm-12">
+                        <div class="section__card special__card">
+                            <div class="price">
+                            <img src="img/popdish3.png" alt="">
+                            <div class="special__card-price">20 &#x24;</div>
+                            </div>
+                            <div class="section__card-title">Chicken Marsala</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                            <div class="section__card-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------UpcomingEvents-------------------------------------------------------->
+        <section class="section events" id="js-event">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section__title text__lines"><span>upcoming events</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card special__card wow animate__fadeInUp" data-wow-duration="1s">
+                            <a href=""><img class="special__card-image" src="img/events1.png" alt=""></a>
+                            <div class="section__card-title">Good time for a barbecue</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card special__card wow animate__fadeInUp" data-wow-duration="1.5s">
+                            <a href=""><img class="special__card-image" src="img/events2.png" alt=""></a>
+                            <div class="section__card-title">its time for pasta</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12">
+                        <div class="section__card special__card wow animate__fadeInUp" data-wow-duration="2s">
+                            <a href=""><img class="special__card-image" src="img/events3.png" alt=""></a>
+                            <div class="section__card-title">Sunday Lunch</div>
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center wow animate__fadeIn" data-wow-duration="3s">
+                    <button class="banner__button--small btn">view all blog</button>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------SectionBanner------------------------------------------------>
+        <section class="section banner" id="js-banner2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-large">
+                        <img src="img/bannerimage.png" alt="">
+                        <div class="banner-large--black">
+                            <h1 class="banner__title">Amazing Restaurant Come And Experience Inspired Cooking</h1>
+                            <div class="banner__text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="banner__buttons">
+                                <button class="banner__button--small-reverse btn">reserve now</button>
+                                <button class="banner__button--small-reverse btn">our menu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------Reviews-------------------------------------------------------->
+        <section class="section reviews" id="js-review">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-4 col-md-6 col-lg-6 col-sm-12">
+                        <div class="section__card review__card">
+                            <img src="img/girl1.png" alt="">
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+                            <div class="rate" data-rateyo-rating="5"></div>
+                            <div class="section__card-title">rafaella bonucci</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-lg-6 col-sm-12">
+                        <div class="section__card review__card">
+                            <img src="img/man1.png" alt="">
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+                            <div class="rate" data-rateyo-rating="5"></div>
+                            <div class="section__card-title">john brise</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-lg-6 col-sm-12">
+                        <div class="section__card review__card">
+                            <img src="img/girl2.png" alt="">
+                            <div class="section__card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+                            <div class="rate" data-rateyo-rating="5"></div>
+                            <div class="section__card-title">michaella folio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--------------------------------------ContactUs-------------------------------------------------------->
+         <section class="section contacts" id="js-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 margin-ten-bottom">
+                        <h2 class="section__title text__lines"><span>Contact us</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact col-xxl-4 col-md-6 col-sm-12 text-center">
+
+                            <img src="img/phoneicon.png" alt="">
+                            <div class="section__card-title">0-800-733-05-23</div>
+
+                    </div>
+                    <div class=" contact col-xxl-4 col-md-6 col-sm-12 text-center">
+
+                            <img src="img/mailicon.png" alt="">
+                            <div class="section__card-title">laspeciarestaurant@mail.com</div>
+
+                    </div>
+                    <div class="contact col-xxl-4 col-md-6 col-sm-12 text-center">
+
+                            <img src="img/locicon.png" alt="">
+                            <div class="section__card-title">wellingtone new zeland</div>
+
+                    </div>
+                </div>
+                <form class="form-contacts" action="">
+                <div class="wide-separator col-md-12 col-sm-12 margin-ten-top margin-ten-bottom">
+                    <div class="separate-line"></div>
+                </div>
+                <div class="form-contacts--left col-md-6 col-sm-12">
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="your name">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your email">
+                </div>
+                <div class="form-contacts--right col-md-6 col-sm-12">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="your text message"></textarea>
+                </div>
+                <div class="form-contacts__bottom col-md-12 col-sm-12">
+                    <div class="form-contacts__text">*Please complete all fields correctly</div>
+                    <button class="form-contacts__button btn">send message</button>
+                </div>
+                </form>
+            </div>
+        </section>
+        <!------------------------------------SocialFooter------------------------------------>
+        <section class="section social" id="js-social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="social__icons">
+                            <a href="">
+                                <i><img src="img/iconfb.png" alt=""></i>
+                            </a>
+                            <a href="">
+                                <i><img src="img/iconinta.png" alt=""></i>
+                            </a>
+                            <a href="">
+                                <i><img src="img/icontw.png" alt=""></i>
+                            </a>
+                            <a href="">
+                                <i><img src="img/iconyt.png" alt=""></i>
+                            </a>
+                            <a href="">
+                                <i><img src="img/iconin.png" alt=""></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer__inner">
+                            <div class="footer__inner-text">
+                                <div class="footer__copyright-text">&copy;2022 TopWeb</div>
+                                <div class="footer__copyright-text">all rights reserved</div>
+                            </div>
+                            <div class="footer_inner-image"><img src="img/TopWebImage.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.rateyo.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
